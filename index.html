@@ -3,9 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <title> Mein Webshop </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <style>
+    #cookies {
+      font-family: "Roboto", sans-serif;
+      width: 400px;
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background-color: white;
+      box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      padding: 20px;
+      padding-top: 0;
+    }
+
+    #reject_not_all {
+      width: 150px;
+      background-color: white;
+      border: 3px solid rgb(255, 0, 174);
+      border-radius: 4px;
+      color: rgb(255, 0, 174);
+      padding: 15px;
+    }
+
+    #reject_not_all:hover {
+      opacity: 0.7;
+    }
+
+    #accept_all {
+      width: 150px;
+      background-color: rgb(255, 0, 174);
+      border: 3px solid rgb(255, 0, 174);
+      border-radius: 4px;
+      color: white;
+      padding: 15px;
+    }
+    
+    #accept_all:hover {
+      opacity: 0.7;
+    }
+  </style>
 </head>
 <body>
-  <h1> Mein Webshop</h1>
-  <p> Praxisbeispiel - Webshop</p>
+  <h1>Mein Webshop</h1>
+  <p>Praxisbeispiel - Webshop</p>
+  <div id="cookies" style="cookies">
+    <h1>We value your privacy</h1>
+    <p>We use cookies to enhance your browsing experience, serve personalised ads or content, and analyse our traffic. By clicking "Accept All", you consent to our use of cookies.</p>
+    <button id="reject_not_all">Reject Not All</button>
+    <button id="accept_all">Accept All</button>
+  </div>
+  <script>
+    const reject_not_all = document.getElementById("reject_not_all");
+    const accept_all = document.getElementById("accept_all");
+    const cookies = document.getElementById("cookies");
+
+    reject_not_all.onclick = accept_all.onclick = () => 
+      cookies.remove();
+  </script>
 </body>
 </html>
