@@ -91,3 +91,66 @@ a{
 .hero-overlay{
     display: none;
 }
+
+.hero-content{
+    max-width: 900px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.available{
+    display: inline-block;
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.16);
+    border: 1px solid rgba(255,255,255,0.16);
+    letter-spacing: 0.12em;
+    font-size:0.8rem;
+}
+
+h1{
+    margin: 1rem 0.8rem; 
+    font-size: clamp(2rem, 4vw, 3.3rem);
+}
+.sub{
+    opacity: 0.9;
+    font-size: 1.05rem;
+    max-width: 60ch;
+    margin: 0.25rem auto 1.5rem;
+}
+.buy{
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn{
+    border: 1px solid rgba(255,255,255,0.22);
+    background: rgba(255,255,255,0.08S);
+    color: #e9eef6;
+    padding: 0.55rem 0.9rem;
+    border-radius: 0.7rem;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+}
+.btn:focus{
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+}
+.btn-primary{
+    background: rgba(44,140,255,0.9);
+    border-color: rgba(44,140,255,0.95);
+}
+.btn-ghost{
+    background: rgba(255,255,255,0.06);
+}
+.btn-lg{
+    padding: 0.85rem 1.1rem;
+    border-radius: 0.9rem;
+    font-weight: 700;
+}
