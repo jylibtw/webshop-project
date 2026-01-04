@@ -180,6 +180,19 @@ h1{
     gap: 0.6rem;
     flex-wrap: wrap;
 }
+.page{
+    max-width: 900px;
+    margin: 4rem auto 6rem;
+    padding: 0 1.25rem;
+}
+.card{
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 1rem;
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+}
 
 @media (mind-width: 820px){
     .nav{
