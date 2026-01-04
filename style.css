@@ -154,3 +154,35 @@ h1{
     border-radius: 0.9rem;
     font-weight: 700;
 }
+
+.cookie{
+    position: fixed;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 0.9rem 1rem;
+    border-radius: 1rem;
+    background: rgba(8, 16, 28, 0.92);
+    border: 1px solid rgba(255,25,255,0.16);
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.cookie p{
+    margin: 0;
+    max-width: 70ch;
+    opacity: 0.95;
+}
+.cookie-actions{
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+}
+
+@media (mind-width: 820px){
+    .nav{
+        display: flex;
+    }
+}
