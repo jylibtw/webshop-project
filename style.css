@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Inter, system-ui, Arial, sans-serif; 
     color:#e9eef6;
     background: #0b1320;
 }
@@ -192,6 +192,27 @@ h1{
     border-radius: 1rem;
     padding: 1.25rem 1.5rem;
     margin: 1.5rem 0;
+}
+
+.features{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 3rem 0;
+    text-align: center;
+}
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: #fff;
+    opacity: 0.5;
+}
+.feature img{
+    width: 36px;
+    height: 36px;
+    filter: brightness(0) invert(1);
 }
 
 @media (mind-width: 820px){

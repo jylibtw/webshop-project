@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title> Quiz4You - Mini-Quiz-Game</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <a class="skip" href="#main"></a> 
@@ -20,7 +23,7 @@
 
     <nav class="nav" aria-label="Hauptnavigation">
       <a href="index.html" aria-current="page">Home</a>
-      <a href="about.html">About us</a>
+      <a href="about.html">About Us</a>
       <a href="contact.html">Impressum</a>
       <a href="license.html">Urheberrecht & Lizenzen</a>
     </nav>
@@ -40,6 +43,22 @@
       </div>
     </section>
   </main>
+
+  <!-- Icons -->
+   <section class="features">
+    <div class="feature">
+      <img src="assets/zap.png" alt="" aria-hidden="true">
+      <span>Schnell</span>
+    </div>
+    <div class="feature">
+      <img src="assets/gamepad-directional.png" alt="" aria-hidden="true">
+      <span>Für Gamer</span>
+    </div>
+    <div class="feature">
+      <img src="assets/brain.png" alt="" aria-hidden="true">
+      <span>Lernen</span>
+    </div>
+   </section>
   
   <footer class="footer">
     <p>© 2026 tomto - Quiz4You</p>
@@ -56,6 +75,10 @@
       <button class="btn btn-primary" type="button">Akzeptieren</button>
     </div>
   </div>
+
+  <!-- js script-->
+  <audio id="btn-sound" src="assets/btn_sound.wav" preload="auto"></audio>
+  <script src ="script.js"></script>
 </body>
 
  
