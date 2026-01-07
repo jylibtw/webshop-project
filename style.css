@@ -236,4 +236,6 @@ h1{
   color: inherit;
 }
 
-
+.hidden { 
+    display: none !important; 
+}
