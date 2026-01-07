@@ -15,10 +15,11 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
   const banner = document.getElementById("cookie-banner");
 
-  if (!banner) return;
+  if (!banner) 
+    return;
 
-  // Schon entschieden?
   const consent = localStorage.getItem("cookieConsent");
+
   if (consent) {
     banner.classList.add("hidden");
     return;
@@ -35,6 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   document.getElementById("cookie-settings")?.addEventListener("click", () => {
-    alert("Einstellungen sind in dieser Demo noch nicht verfügbar.");
+    alert("Einstellungen sind Mocked");
   });
 });

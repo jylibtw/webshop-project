@@ -22,6 +22,7 @@ body{
 .top{
     position: sticky;
     top: 0;
+    bottom: 0;
     display: flex;
     gap: 1rem;
     align-items: center;
@@ -238,4 +239,23 @@ h1{
 
 .hidden { 
     display: none !important; 
+}
+
+.license-block {
+  margin-top: 1.5rem;
+}
+
+.license-block h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.license-block ul {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.license-block li {
+  margin: 0.2rem 0;
+  line-height: 1.5;
 }
