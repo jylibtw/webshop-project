@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title> AboutUs - Quiz4You</title>
+  <title> Impressum/Kontakt - Quiz4You</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,19 +32,51 @@
   </header>
 
   <main class="card">
-    <h2>About Quiz4You</h2>
-    <p>Quiz4You ist ein schnelles Quizspiel für zwischendurch, damit einem nie langweilig wird. Wir legen dabei Wert auf denn spaß jedes einzelnen Spielers. Deshalb versuchen wir unsere Website Barrierefrei und Transparent zu gestalten.</p>
-    
-    <h2>Markenformen</h2>
-    <p> <u> Wort- und Bildermarke:</u> <b>Quiz4You </b> bzw. <b> Q4 </b> Logo</p>
-    <p> <u> Positionsmarke:</u> Das Q4 Logo ist immer oben links positioniert</p>
-    <p> <u> Formmarke:</u> Das generelle Design vermeidet Kanten, deshalb sind alle Kasten abgerundet</p>
+    <h1>Impressum & Kontakt</h1>
 
-    <h2>Nizza-Klassen</h2>
-    <p> Wortmarke: Klasse 9 - beschreibt eine Computersoftware</p>
-    <p> Positionsmarke: Klasse 41 - Erkennungsmerkmal</p>
-    <P> Formmarke: Klasse 42 - Entwurf und Entwicklung von Computersoftware</P>
-    <p> Quelle nach <a href="https://www.dpma.de/docs/marken/klassifikation_nizza/ncl13-2026_klassentitel_erl_anmerkungen.pdf">Deutsches Patent- und Markenamt</a></p>
+  <section aria-labelledby="impressum-title">
+    <h2 id="impressum-title">Impressum</h2>
 
+    <p><b>Medieninhaber / Diensteanbieter:</b> tomto</p>
+    <p><b>Unternehmensgegenstand:</b> Entwicklung und Vertrieb des Mini-Quiz-Games „Quiz4You“.</p>
+    <p><b>Sitz:</b> Wien, Österriech</p>
+    <p><b>Kontakt:</b> <a href="mailto:tomto@gmail.com">tomto123@gmail.com</a></p>
+
+    <h3>Haftung für Inhalte & Links</h3>
+    <p>
+      Wir erstellen die Inhalte dieser Website mit Sorgfalt. Für externe Links übernehmen wir keine Haftung,
+      da wir auf deren Inhalte keinen Einfluss haben.
+    </p>
+
+    <h3>Urheberrecht</h3>
+    <p>
+      Inhalte, Design und Medien dieser Website sind urheberrechtlich geschützt. Nutzungen außerhalb der
+      gesetzlichen Schranken bedürfen der Zustimmung der RechteinhaberInnen.
+    </p>
+  </section>
  </main>
+
+  <section id="contact" class="card page" aria-labelledby="contact-title">
+  <h2 id="contact-title">Kontakt</h2>
+
+  <form class="contact-form">
+    <label>
+      Name
+      <input type="text" name="name" required>
+    </label>
+
+    <label>
+      E-Mail
+      <input type="email" name="email" required>
+    </label>
+
+    <label>
+      Nachricht
+      <input type="text" name="Nachricht" required>
+    </label>
+
+    <button class="btn btn-primary" type="submit">Absenden</button>
+  </form>
+ </section>
+
 </html>
