@@ -85,7 +85,7 @@ a{
         linear-gradient(180deg, rgba(11,19,32,0.55), rgba(11,19,32,0.9)),
         radial-gradient(circle at 30% 20%, rgba(44,140,255,0.35), transparent),
         radial-gradient(circle at 80% 30%, rgba(110,255,190,0.25), transparent),
-        url("assets/hero2.jpg");
+        url("assets/hero2.png");
 }
 
 .hero-overlay{
