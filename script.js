@@ -11,30 +11,3 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
-
-document.addEventListener("DOMContentLoaded", () => {
-  const banner = document.getElementById("cookie-banner");
-
-  if (!banner) return;
-
-  // Schon entschieden?
-  const consent = localStorage.getItem("cookieConsent");
-  if (consent) {
-    banner.classList.add("hidden");
-    return;
-  }
-
-  document.getElementById("cookie-accept")?.addEventListener("click", () => {
-    localStorage.setItem("cookieConsent", "accepted");
-    banner.classList.add("hidden");
-  });
-
-  document.getElementById("cookie-decline")?.addEventListener("click", () => {
-    localStorage.setItem("cookieConsent", "declined");
-    banner.classList.add("hidden");
-  });
-
-  document.getElementById("cookie-settings")?.addEventListener("click", () => {
-    alert("Einstellungen sind in dieser Demo noch nicht verfügbar.");
-  });
-});
